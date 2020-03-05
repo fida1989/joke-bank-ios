@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		492849ED240F8E55003E63F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492849EC240F8E55003E63F1 /* AppDelegate.swift */; };
 		492849EF240F8E55003E63F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492849EE240F8E55003E63F1 /* SceneDelegate.swift */; };
-		492849F1240F8E55003E63F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492849F0240F8E55003E63F1 /* ViewController.swift */; };
 		492849F4240F8E55003E63F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492849F2240F8E55003E63F1 /* Main.storyboard */; };
 		492849F6240F8E57003E63F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492849F5240F8E57003E63F1 /* Assets.xcassets */; };
 		492849F9240F8E57003E63F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492849F7240F8E57003E63F1 /* LaunchScreen.storyboard */; };
+		49284A01240FA54B003E63F1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49284A00240FA54B003E63F1 /* TableViewController.swift */; };
+		49284A03240FB35F003E63F1 /* JokeDefinitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49284A02240FB35F003E63F1 /* JokeDefinitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		492849E9240F8E55003E63F1 /* Joke Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492849EC240F8E55003E63F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		492849EE240F8E55003E63F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		492849F0240F8E55003E63F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		492849F3240F8E55003E63F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		492849F5240F8E57003E63F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492849F8240F8E57003E63F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492849FA240F8E57003E63F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49284A00240FA54B003E63F1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		49284A02240FB35F003E63F1 /* JokeDefinitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDefinitionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				492849EC240F8E55003E63F1 /* AppDelegate.swift */,
 				492849EE240F8E55003E63F1 /* SceneDelegate.swift */,
-				492849F0240F8E55003E63F1 /* ViewController.swift */,
 				492849F2240F8E55003E63F1 /* Main.storyboard */,
 				492849F5240F8E57003E63F1 /* Assets.xcassets */,
 				492849F7240F8E57003E63F1 /* LaunchScreen.storyboard */,
 				492849FA240F8E57003E63F1 /* Info.plist */,
+				49284A00240FA54B003E63F1 /* TableViewController.swift */,
+				49284A02240FB35F003E63F1 /* JokeDefinitionController.swift */,
 			);
 			path = "Joke Bank";
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492849F1240F8E55003E63F1 /* ViewController.swift in Sources */,
 				492849ED240F8E55003E63F1 /* AppDelegate.swift in Sources */,
+				49284A01240FA54B003E63F1 /* TableViewController.swift in Sources */,
 				492849EF240F8E55003E63F1 /* SceneDelegate.swift in Sources */,
+				49284A03240FB35F003E63F1 /* JokeDefinitionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hungrydroid.Joke-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hungrydroid.Joke-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
